@@ -195,13 +195,6 @@
                                             <constraint firstAttribute="width" secondItem="0bt-py-Cgx" secondAttribute="height" multiplier="1:1" id="GhO-kw-QHy"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-square-button" translatesAutoresizingMaskIntoConstraints="NO" id="KxC-Dz-PvJ">
-                                        <rect key="frame" x="192" y="20" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="KxC-Dz-PvJ" secondAttribute="height" multiplier="1:1" id="Z71-MQ-K1E"/>
-                                            <constraint firstAttribute="width" constant="30" id="iak-YC-R6A"/>
-                                        </constraints>
-                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="qQt-U1-J0b">
                                         <rect key="frame" x="282" y="20" width="30" height="30"/>
                                         <constraints>
@@ -216,20 +209,32 @@
                                             <constraint firstAttribute="width" secondItem="dLS-Jc-xuR" secondAttribute="height" multiplier="1:1" id="nfb-Ev-nwt"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzP-PI-Nbm">
+                                        <rect key="frame" x="192" y="20" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="LFW-ON-bms"/>
+                                            <constraint firstAttribute="height" constant="30" id="zQQ-FU-7HG"/>
+                                        </constraints>
+                                        <state key="normal" image="add-square-button"/>
+                                        <connections>
+                                            <action selector="addButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PP1-jU-n9F"/>
+                                            <segue destination="RFQ-cn-UF7" kind="presentation" id="qgf-pU-IpE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96461421251296997" green="0.96477204561233521" blue="0.96458059549331665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="KxC-Dz-PvJ" firstAttribute="leading" secondItem="0bt-py-Cgx" secondAttribute="trailing" constant="60" id="0ed-PQ-832"/>
-                                    <constraint firstItem="qQt-U1-J0b" firstAttribute="leading" secondItem="KxC-Dz-PvJ" secondAttribute="trailing" constant="60" id="2SY-5H-RIG"/>
+                                    <constraint firstItem="qQt-U1-J0b" firstAttribute="leading" secondItem="qzP-PI-Nbm" secondAttribute="trailing" constant="60" id="0iB-x4-nev"/>
                                     <constraint firstItem="1TU-O0-Lfm" firstAttribute="leading" secondItem="9Gw-8g-rjE" secondAttribute="leading" constant="15" id="3Ee-qu-1xY"/>
+                                    <constraint firstItem="qzP-PI-Nbm" firstAttribute="centerY" secondItem="9Gw-8g-rjE" secondAttribute="centerY" id="CU9-8G-XwI"/>
                                     <constraint firstItem="1TU-O0-Lfm" firstAttribute="centerY" secondItem="9Gw-8g-rjE" secondAttribute="centerY" id="GRv-8U-YBT"/>
                                     <constraint firstItem="dLS-Jc-xuR" firstAttribute="centerY" secondItem="9Gw-8g-rjE" secondAttribute="centerY" id="H9H-ic-Oo6"/>
                                     <constraint firstItem="qQt-U1-J0b" firstAttribute="centerY" secondItem="9Gw-8g-rjE" secondAttribute="centerY" id="Hy1-iM-YWB"/>
-                                    <constraint firstItem="KxC-Dz-PvJ" firstAttribute="centerY" secondItem="9Gw-8g-rjE" secondAttribute="centerY" id="L2j-cL-B96"/>
+                                    <constraint firstItem="qzP-PI-Nbm" firstAttribute="centerX" secondItem="9Gw-8g-rjE" secondAttribute="centerX" id="QI9-LW-W3D"/>
+                                    <constraint firstItem="qzP-PI-Nbm" firstAttribute="leading" secondItem="0bt-py-Cgx" secondAttribute="trailing" constant="60" id="acv-BN-O1Y"/>
                                     <constraint firstAttribute="height" constant="70" id="kY4-iP-DXF"/>
                                     <constraint firstAttribute="trailing" secondItem="dLS-Jc-xuR" secondAttribute="trailing" constant="15" id="miL-kL-yYT"/>
                                     <constraint firstItem="0bt-py-Cgx" firstAttribute="centerY" secondItem="9Gw-8g-rjE" secondAttribute="centerY" id="p2S-52-x4b"/>
-                                    <constraint firstItem="KxC-Dz-PvJ" firstAttribute="centerX" secondItem="9Gw-8g-rjE" secondAttribute="centerX" id="yfL-iQ-x4p"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -256,6 +261,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852.17391304347836" y="126.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fwN-fT-yeb">
+            <objects>
+                <viewController id="RFQ-cn-UF7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wy6-Rw-7tn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ymz-1I-McO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dcx-Yz-6Hz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579" y="139"/>
         </scene>
     </scenes>
     <resources>

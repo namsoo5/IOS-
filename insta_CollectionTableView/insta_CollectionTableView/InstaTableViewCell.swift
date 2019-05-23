@@ -19,7 +19,7 @@ class InstaTableViewCell: UITableViewCell {
     @IBOutlet weak var commentNumLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        userImageIcon.layer.cornerRadius = frame.width/2
+        userImageIcon.layer.cornerRadius = 20
         // Initialization code
     }
 
