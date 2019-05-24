@@ -14,6 +14,8 @@
 		1BEE1D642296E23600A119D2 /* InstaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE1D632296E23600A119D2 /* InstaTableViewCell.swift */; };
 		1BEE1D662296E31200A119D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE1D652296E31200A119D2 /* Assets.xcassets */; };
 		1BEE1D682296E57F00A119D2 /* InstaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE1D672296E57F00A119D2 /* InstaObject.swift */; };
+		1BEE1D6A2297851E00A119D2 /* InstaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE1D692297851E00A119D2 /* InstaCollectionViewCell.swift */; };
+		1BEE1D6C2297859100A119D2 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE1D6B2297859100A119D2 /* CollectionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1BEE1D632296E23600A119D2 /* InstaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaTableViewCell.swift; sourceTree = "<group>"; };
 		1BEE1D652296E31200A119D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BEE1D672296E57F00A119D2 /* InstaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaObject.swift; sourceTree = "<group>"; };
+		1BEE1D692297851E00A119D2 /* InstaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCollectionViewCell.swift; sourceTree = "<group>"; };
+		1BEE1D6B2297859100A119D2 /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				1BEE1D532296D49E00A119D2 /* ViewController.swift */,
 				1BEE1D672296E57F00A119D2 /* InstaObject.swift */,
 				1BEE1D552296D49E00A119D2 /* Main.storyboard */,
+				1BEE1D692297851E00A119D2 /* InstaCollectionViewCell.swift */,
+				1BEE1D6B2297859100A119D2 /* CollectionVC.swift */,
 				1BEE1D632296E23600A119D2 /* InstaTableViewCell.swift */,
 				1BEE1D5A2296D4A200A119D2 /* LaunchScreen.storyboard */,
 				1BEE1D652296E31200A119D2 /* Assets.xcassets */,
@@ -145,6 +151,8 @@
 				1BEE1D522296D49E00A119D2 /* AppDelegate.swift in Sources */,
 				1BEE1D682296E57F00A119D2 /* InstaObject.swift in Sources */,
 				1BEE1D642296E23600A119D2 /* InstaTableViewCell.swift in Sources */,
+				1BEE1D6C2297859100A119D2 /* CollectionVC.swift in Sources */,
+				1BEE1D6A2297851E00A119D2 /* InstaCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
