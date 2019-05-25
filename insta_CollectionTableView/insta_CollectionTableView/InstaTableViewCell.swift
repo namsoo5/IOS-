@@ -17,6 +17,9 @@ class InstaTableViewCell: UITableViewCell {
     @IBOutlet weak var commentUserIdLabel: UILabel!
     @IBOutlet weak var comment: UILabel!
     @IBOutlet weak var commentNumLabel: UILabel!
+    @IBOutlet weak var heartButton: UIButton!
+    
+    var likeCount = Int()
     override func awakeFromNib() {
         super.awakeFromNib()
         userImageIcon.layer.cornerRadius = 20
@@ -28,5 +31,22 @@ class InstaTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func likeButton(_ sender: UIButton) {
+        if !sender.isSelected {  //미선택상태일때 클릭시
+            sender.isSelected = !sender.isSelected
+            sender.setBackgroundImage(UIImage(named: "like"), for: .normal)
+            likeCount += 1
+            likeLabel.text = "좋아요 \(likeCount)개"
+            
+        }else {
+            sender.isSelected = !sender.isSelected
+            sender.setBackgroundImage(UIImage(named: "heart"), for: .normal)
+            
+            likeCount -= 1
+            likeLabel.text = "좋아요 \(likeCount)개"
+        }
+    }
+    
 
 }

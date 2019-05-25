@@ -20,5 +20,17 @@ class InstaCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         userImageIcon.layer.cornerRadius = 20
+        
+        
     }
+    @IBAction func likeButton(_ sender: UIButton) {
+        if !sender.isSelected {
+            sender.isSelected = !sender.isSelected
+            sender.setBackgroundImage(UIImage(named: "like"), for: .normal)
+        }else{
+            sender.isSelected = !sender.isSelected
+            sender.setBackgroundImage(UIImage(named: "heart"), for: .normal)
+        }
+    }
+    
 }

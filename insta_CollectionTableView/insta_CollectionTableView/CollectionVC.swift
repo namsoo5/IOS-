@@ -25,6 +25,7 @@ class CollectionVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    
 }
 
 extension CollectionVC: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -52,6 +53,7 @@ extension CollectionVC: UICollectionViewDataSource, UICollectionViewDelegate {
         cell.commentUserIdLabel.sizeToFit()
         cell.comment.sizeToFit()
         cell.commentNumLabel.sizeToFit()
+        
         return cell
     }
     
@@ -60,7 +62,6 @@ extension CollectionVC: UICollectionViewDataSource, UICollectionViewDelegate {
         cell?.backgroundColor = UIColor.lightGray
     }
 
-    
 }
 
 extension CollectionVC: UICollectionViewDelegateFlowLayout{

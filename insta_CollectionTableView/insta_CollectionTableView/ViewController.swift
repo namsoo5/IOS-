@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         dataSet()
     }
 
-    
 
 }
 
@@ -39,7 +38,8 @@ extension ViewController: UITableViewDataSource {
         cell.userImageIcon.image = content.userIconImage
         cell.userIdLabel.text = content.userId
         cell.photo.image = content.photo
-        cell.likeLabel.text = "좋아요 \(content.like)개"
+        cell.likeCount = content.like
+        cell.likeLabel.text = "좋아요 \(cell.likeCount)개"
         cell.commentUserIdLabel.text = content.userId
         cell.comment.text = content.userComment
         cell.commentNumLabel.text = "댓글 \(content.commentNum)개 모두 보기"
